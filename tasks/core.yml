@@ -1,0 +1,6 @@
+- name: Install System packages
+  become: true
+  apt:
+    name: ["build-essentials", "pkg-config", "libpthread-stubs0-dev", "tlrd", "ripgrep"]
+  tags:
+    - core
