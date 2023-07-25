@@ -12,3 +12,10 @@
     value: "FMGordillo"
   tags:
     - git
+- name: Avoid CRLF vs LF
+  git_config:
+    name: core.autocrlf
+    scope: global
+    value: false
+  tags:
+    - git
